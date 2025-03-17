@@ -14,7 +14,7 @@ Input files expected in data/:
 - improvement.csv: Improvement assessments between users' first and last image generations
 - sat_rating_10.csv: Satisfaction ratings on 10-point scale
 - sat_rating_4.csv: Satisfaction ratings on 4-point scale
-- steering_all_seeds.csv: CLIP and DreamSim similarity scores on steering data from all users in our study.
+- steering.csv: CLIP and DreamSim similarity scores on steering data from all users in our study.
 """
 
 import pandas as pd
@@ -27,7 +27,7 @@ pom5 = pd.read_csv('data/pom5.csv')
 improvement = pd.read_csv('data/improvement.csv')
 ratings10 = pd.read_csv('data/sat_rating_10.csv')
 ratings4 = pd.read_csv('data/sat_rating_4.csv')
-steering = pd.read_csv('data/steering_all_seeds.csv')
+steering = pd.read_csv('data/steering.csv')
 
 def majority_vote(group):
     """
