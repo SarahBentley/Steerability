@@ -22,7 +22,7 @@ The data and analysis from our benchmark on the steerability of image generation
 
 ### Data
 We provide the following data:
--  `steering_all_seeds.csv`: Our primary survey on steering image generation models. Each row contains a user's steering attempt, and the data is organized by users. The `dreamsim` and `clip_similarity` columns contain similarity scores between the goal_image and generated_image.
+-  `steering.csv`: Our primary survey on steering image generation models. Each row contains a user's steering attempt, and the data is organized by users. The `dreamsim` and `clip_similarity` columns contain similarity scores between the goal_image and generated_image.
 - `steering_x_seeds.csv`: Users perform steering as usual, but they are constrained to x different seeds, which are assigned to different attempts at random.
 - `pom1.csv`: Prompt-Output-Misalignment data for first attempts. The `choice` column contains the image chosen by the user (either the goal or first attempt image), while `goal_chosen` is a binary variable indicating whether the user chose the goal image.
 - `pom5.csv`: Prompt-Output-Misalignment data for fifth attempts. The `choice` column contains the image chosen by the user (either the goal or fifth attempt image), while `goal_chosen` is a binary variable indicating whether the user chose the goal image.
