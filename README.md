@@ -23,14 +23,13 @@ We provide the following data:
 - `improvement.csv`: Users' assessments of whether first attempt or last attempt images are closer to their corresponding goal images. `last_chosen` is a binary variable indicating whether the user chose the last attempt image.
 - `sat_rating_10.csv`: User satisfaction ratings of the generated images, in comparison to the goal images, on a 10-point scale.
 - `sat_rating_4.csv`: User satisfaction ratings of the generated images, in comparison to the goal images, on a 4-point scale.
-- `steering_all_seeds.csv`: Human steering attempts with CLIP and DreamSim similarity scores
--  `blind_steering_x.csv`: The results of blind steering, when an LLM steers an image generation model by producing x variations of their first attempt prompt. The `score` column contains the DreamSim score of the LLM's generate image, and the `user_score` column contains the DreamSim score of the user's first attempt image.
-- `choosing_seed.csv`: Users perform steering while being able to choose a seed each time they generate an image.
+-  `blind_steering_x.csv`: The results of blind steering, when an LLM steers an image generation model by producing x variations of a user's first attempt prompt. The `score` column contains the DreamSim score of the LLM's generated image, and the `user_score` column contains the DreamSim score of the user's first attempt image.
+- `choosing_seed.csv`: Users perform steering while choosing a seed each time they generate an image.
 - `img_steering.csv`: Users steer image generation models by iteratively choosing from variations of their current generated image.
 - `img_steering_rl.csv`: We leverage a reinforcement learning technique to optimally provide image variations.
-- `img_steering_rl_tiles.csv`: Image steering with RL on imagees of tiles.
-- `bookshelf_steering.csv`: Steering experiment towards one specific goal image -- an image of books -- for our primary figure.
-- `summary_metrics.csv`: A summary of our main metrics -- improvement rating, POM1, and POM5 -- for each model.
+- `img_steering_rl_tiles.csv`: Image steering with RL on images of tiles.
+- `bookshelf_steering.csv`: Steering towards one specific goal image -- an image of books -- for our primary figure.
+- `summary_metrics.csv`: A summary of our main metrics -- improvement rating, POM1, POM5, and more -- for each model.
 
 ### Analysis
 The `calculate_summary_metrics.py` script can be used to generate the metrics for our benchmark on steerability reported in the paper. The notebook `tables_and_figures.ipynb` can be used to explore the data and generate the tables and figures in our paper.
